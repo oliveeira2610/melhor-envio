@@ -1,0 +1,104 @@
+.consulta-frete {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dimensoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.opcoes-frete ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.opcoes-frete li {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.opcoes-frete li.selected {
+  border-color: #646cff;
+  background-color: #f0f4ff;
+}
+
+.opcoes-frete li:hover {
+  background-color: #f5f5f5;
+}
+
+.acoes-etiqueta {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.gerar-etiqueta-btn {
+  background-color: #4CAF50;
+}
+
+.baixar-etiqueta-btn {
+  background-color: #2196F3;
+}
+
+.mensagem {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.mensagem.sucesso {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.mensagem.erro {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.gerar-etiqueta-btn:disabled,
+.baixar-etiqueta-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
