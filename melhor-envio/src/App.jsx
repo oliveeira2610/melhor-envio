@@ -19,23 +19,9 @@ function App() {
 
   return (
     <div className="app-container">
+      <div className='Titulo'>
       <h1>Integração Melhor Envio</h1>
-      
-      <div className="tabs">
-        <button 
-          className={activeTab === 'frete' ? 'active' : ''}
-          onClick={() => setActiveTab('frete')}
-        >
-          Consultar Frete
-        </button>
-        <button 
-          className={activeTab === 'etiqueta' ? 'active' : ''}
-          onClick={() => setActiveTab('etiqueta')}
-        >
-          Gerar Etiqueta
-        </button>
       </div>
-
       <div className="tab-content">
         {activeTab === 'frete' ? <ConsultaFrete /> : <GerarEtiqueta />}
       </div>
